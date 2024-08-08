@@ -1,0 +1,160 @@
+*{
+    color: white;
+}
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.header > .links {
+    display: flex;
+    justify-content: center;
+}
+.header > .links > ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+.header > .links{
+    width: 20%;
+}
+.header > .header-logo > h3{
+    color: red;
+    text-align: center;
+}
+.header > .header-logo{
+    width: 60%;
+}
+.header > .header-btn > button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 15px;
+}
+.hero-links > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.hero-links > ul > li > a{
+    text-decoration: none;
+}
+.hero-links > ul > li{
+    padding: 15px;
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 700px;
+}
+.left-side > .hero-heading > h1{
+    font-size: 80px;
+    text-wrap: wrap;
+}
+.hero-section > div{
+    width: 50%;
+}
+.right-side{
+    display: flex;
+    justify-content: flex-end;
+}
+.hero-links > ul{
+    width: 100%;
+}
+.hero-infos{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.hero-infos > div {
+    width: 40%;
+    text-align: center;
+}
+.hero-links{
+    width: 60%;
+}
+.hero-heading{
+    width: 80%;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.red{
+    color: red;
+}
+.links > ul > li:hover{
+    text-decoration: underline;
+    scale: 1.2;
+}
+.hero-links > ul > li:hover{
+    transform: skew(-20deg,0);
+    background-image: linear-gradient(rgb(201, 85, 85),red);
+}
+.header-btn > button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+@media  (max-width:1100px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links > ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links > ul > li{
+        margin: 20px 0;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+    .container{
+        height: auto;
+    }
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .hero-heading ,
+    .hero-links,
+    .hero-infos{
+        width: 100%;
+    }
+    .right-side{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+    }
+}
